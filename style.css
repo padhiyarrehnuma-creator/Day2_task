@@ -7,11 +7,11 @@
 
 body{
     background:#ffffff;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
-    padding:30px;
+    padding:40px;
 }
 
 .container{
@@ -22,26 +22,26 @@ body{
 }
 
 .form-box{
-    width:430px;
-    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    width:500px;
+    background:linear-gradient(135deg,#7b2ff7,#2575fc);
     padding:35px;
-    border-radius:18px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
 h2{
     text-align:center;
-    color:#ffffff;
-    margin-bottom:25px;
-    font-size:30px;
+    color:#fff;
+    margin-bottom:30px;
+    font-size:38px;
 }
 
 label{
     display:block;
-    color:#ffffff;
-    font-size:16px;
+    color:#fff;
+    font-size:18px;
     font-weight:bold;
-    margin-top:15px;
+    margin-top:18px;
     margin-bottom:8px;
 }
 
@@ -50,66 +50,71 @@ input[type="email"],
 input[type="password"],
 select{
     width:100%;
-    padding:13px;
+    padding:15px;
     border:none;
-    border-radius:8px;
+    border-radius:10px;
     outline:none;
-    font-size:15px;
-    background:#ffffff;
-    color:#333;
-    margin-bottom:8px;
+    font-size:16px;
+    margin-bottom:10px;
+    background:#fff;
 }
 
 input:focus,
 select:focus{
-    box-shadow:0 0 10px #ffffff;
+    box-shadow:0 0 10px rgba(255,255,255,.8);
 }
 
 .gender{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:20px;
-    color:#ffffff;
-    flex-wrap:wrap;
+    margin:15px 0 25px;
 }
 
-.gender label{
+.radio{
     display:flex;
     align-items:center;
-    gap:5px;
+    gap:6px;
+    color:#fff;
+    font-size:16px;
     font-weight:normal;
     margin:0;
 }
 
-input[type="radio"]{
-    cursor:pointer;
+.radio input{
+    accent-color:white;
+    width:18px;
+    height:18px;
 }
 
 button{
     width:100%;
-    padding:14px;
+    padding:15px;
+    margin-top:20px;
     border:none;
-    border-radius:8px;
-    background:#ffffff;
+    border-radius:10px;
+    background:#fff;
     color:#6a11cb;
     font-size:18px;
     font-weight:bold;
     cursor:pointer;
-    margin-top:20px;
-    transition:0.3s;
+    transition:.3s;
 }
 
 button:hover{
-    background:#f3f3f3;
+    background:#ececec;
     transform:scale(1.03);
 }
 
 ::placeholder{
-    color:#888;
+    color:#777;
 }
 
-@media(max-width:500px){
+@media(max-width:600px){
+
+    body{
+        padding:20px;
+    }
 
     .form-box{
         width:100%;
@@ -117,13 +122,13 @@ button:hover{
     }
 
     h2{
-        font-size:25px;
+        font-size:30px;
     }
 
     .gender{
         flex-direction:column;
         align-items:flex-start;
-        gap:10px;
+        gap:12px;
     }
 
-    }
+}
